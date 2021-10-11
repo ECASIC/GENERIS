@@ -14,3 +14,5 @@ from tkinter import ttk  # Carga ttk (para widgets nuevos 8.5+)
 ventana_principal = Tk()
 #sincronizacion
 #sincronizacion
+
+#cambio1
