@@ -16,3 +16,5 @@ ventana_principal = Tk()
 #sincronizacion
 
 #cambio1
+#cambio2
+
