@@ -9,18 +9,19 @@ from tkinter import *    # Carga módulo tk (widgets estándar)
 from tkinter import ttk  # Carga ttk (para widgets nuevos 8.5+)
 import tkinter as tk #en lugar de escibir tikinter siempre solo se pone tk
 app= tk.Tk() #Nombre del menu de app
-app.geometry("500x600") # Da geometria de la pantalla de la app cuando se abre
+app.geometry("400x400") # Da geometria de la pantalla de la app cuando se abre
 app.configure(background="beige") #Da color al fondo de la app
 tk.Wm.wm_title(app,"Generis") #Titulo a app cuando se abre 
-
-tk.Button( 
-    app,
-    text="Informacion",
-    font= ("Arial, 14"),
-    bg= "#38B6FF",
-    fg="white",
-).pack(
-)# de tk button hastaa aqui es un ejemplo del formato para crear botones
+Label(app, text="Nombre:").grid(pady=5, row=0, column=0)
+Button(app, text="Nombre:").grid(pady=5, row=0, column=1)
+#tk.Button( 
+ #   app,
+ #   text="Informacion",
+ #   font= ("Arial, 14"),
+ #   bg= "#38B6FF",
+ #   fg="white",
+#).pack(
+#)# de tk button hastaa aqui es un ejemplo del formato para crear botones
 
 
 
