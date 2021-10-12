@@ -12,9 +12,4 @@ from tkinter import ttk  # Carga ttk (para widgets nuevos 8.5+)
 
 # Define la ventana principal de la aplicación
 ventana_principal = Tk()
-#sincronizacion
-#sincronizacion
 
-#cambio1
-#cambio2
-#prueba1
