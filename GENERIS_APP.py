@@ -50,10 +50,10 @@ class aplicacion():
                                 show="*", 
                                 width=30)
         self.separ1 = ttk.Separator(self.marco, orient=HORIZONTAL)
-        self.boton1 = ttk.Button(self.marco, text="Aceptar", 
-                                 padding=(5,5), command=self.aceptar)
-        self.boton2 = ttk.Button(self.marco, text="Cancelar", 
-                                 padding=(5,5), command=quit)
+      #  self.boton1 = ttk.Button(self.marco, text="Aceptar", 
+     #                            padding=(5,5), command=self.aceptar)
+     #   self.boton2 = ttk.Button(self.marco, text="Cancelar", 
+      #                           padding=(5,5), command=quit)
         
         # Define la ubicación de cada widget en el grid.
         # En este ejemplo en realidad hay dos grid (cuadrículas):
@@ -76,24 +76,24 @@ class aplicacion():
         self.etiq2.grid(column=0, row=1)
         self.ctext2.grid(column=1, row=1, columnspan=2)
         self.separ1.grid(column=0, row=3, columnspan=3)
-        self.boton1.grid(column=1, row=4)
-        self.boton2.grid(column=2, row=4)
+#        self.boton1.grid(column=1, row=4)
+      #  self.boton2.grid(column=2, row=4)
 
         # Establece el foco en la caja de entrada de la
         # contraseña.
 
-        self.ctext2.focus_set()
+     #   self.ctext2.focus_set()
         self.app.mainloop()
     
-    def aceptar(self):
-        if self.clave.get() == 'tkinter':
-            print("Acceso permitido")
-            print("Usuario:   ", self.ctext1.get())
-            print("Contraseña:", self.ctext2.get())
-        else:
-            print("Acceso denegado")
-            self.clave.set("")
-            self.ctext2.focus_set()
+  #  def aceptar(self):
+  #      if self.clave.get() == 'tkinter':
+  #          print("Acceso permitido")
+  #          print("Usuario:   ", self.ctext1.get())
+   #         print("Contraseña:", self.ctext2.get())
+   #     else:
+  #          print("Acceso denegado")
+  #          self.clave.set("")
+  #          self.ctext2.focus_set()
 
 def main():
     mi_app = aplicacion()
