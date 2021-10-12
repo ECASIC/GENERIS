@@ -27,16 +27,16 @@ class aplicacion():
         # que los widgets no queden pegados al borde del marco.
           
         self.marco = ttk.Frame(self.app, borderwidth=2,
-                               relief="raised", padding=(50,150))
+                               relief="raised", padding=(5,5))
                                
         # Define el resto de widgets pero en este caso el primer 
         # paràmetro indica que se situarán en el widget del 
         # marco anterior 'self.marco'.
-        img_logo = PhotoImage(file="logo_generis.png", width=300, height=200)      
+        img_logo = PhotoImage(file="logo_generis.png", width=300, height=100)      
         self.etiq1 = ttk.Label(self.marco, image=img_logo, padding=(5,5))
                                
         self.etiq2 = ttk.Label(self.marco, text="Contraseña:",
-                               font=fuente, padding=(5,5))
+                               font=fuente, padding=(3,3))
                                
         # Define variables para las opciones 'textvariable' de
         # cada caja de entrada 'ttk.Entry()'.
@@ -71,8 +71,8 @@ class aplicacion():
         # de separación 'self.separ1' tres.
         
         self.marco.grid(column=0, row=0)
-        self.etiq1.grid(column=0, row=0)
-        self.ctext1.grid(column=1, row=0, columnspan=2)
+        self.etiq1.grid(column=0, row=0, columnspan=2)
+        self.ctext1.grid(column=1, row=1, columnspan=2)
         self.etiq2.grid(column=0, row=1)
         self.ctext2.grid(column=1, row=1, columnspan=2)
         self.separ1.grid(column=0, row=3, columnspan=3)
