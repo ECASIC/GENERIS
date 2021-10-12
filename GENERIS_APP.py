@@ -7,8 +7,7 @@ from tkinter import *    # Carga módulo tk (widgets estándar)
 from tkinter import ttk, font  # Carga ttk (para widgets nuevos 8.5+)
 import getpass
 import tkinter as tk #en lugar de escibir tkinter siempre solo se pone tk
-from tkinter import ImageTk, Image
-img_logo = ImageTk.PhotoImage(Image.open("app.png"))
+from tkinter import Image
 class aplicacion():
     def __init__(self):
         self.app = Tk()
@@ -33,9 +32,8 @@ class aplicacion():
         # Define el resto de widgets pero en este caso el primer 
         # paràmetro indica que se situarán en el widget del 
         # marco anterior 'self.marco'.
-                               
-        self.etiq1 = ttk.Label(self.marco, text="Usuario:", 
-                               font=fuente, padding=(5,5))
+        img_logo = PhotoImage(file="logo_generis.png", width=300, height=200)      
+        self.etiq1 = ttk.Label(self.marco, image=img_logo, padding=(5,5))
                                
         self.etiq2 = ttk.Label(self.marco, text="Contraseña:",
                                font=fuente, padding=(5,5))
